@@ -2,11 +2,11 @@
 # vim: ft=jinja
 
 {#- Start imports as #}
-{%- import_yaml tplroot ~ "alcali/defaults.yaml" as default_settings %}
-{%- import_yaml tplroot ~ "alcali/osarchmap.yaml" as osarchmap %}
-{%- import_yaml tplroot ~ "alcali/osfamilymap.yaml" as osfamilymap %}
-{%- import_yaml tplroot ~ "alcali/osmap.yaml" as osmap %}
-{%- import_yaml tplroot ~ "alcali/osfingermap.yaml" as osfingermap %}
+{%- import_yaml tplroot ~ "/defaults.yaml" as default_settings %}
+{%- import_yaml tplroot ~ "/osarchmap.yaml" as osarchmap %}
+{%- import_yaml tplroot ~ "/osfamilymap.yaml" as osfamilymap %}
+{%- import_yaml tplroot ~ "/osmap.yaml" as osmap %}
+{%- import_yaml tplroot ~ "/osfingermap.yaml" as osfingermap %}
 
 {#- Retrieve the config dict only once #}
 {%- set _config = salt['config.get'](tplroot, default={}) %}
